@@ -1,6 +1,6 @@
 config:
   aws:region: ap-southeast-2
   pulumi-quickstart:ip_address:
-    secure: AAABAEKVduuovzZ9gllMOkxWOJgnjV1/+OjkJxapOjld3O6JXvgUX4GyGLVEJTyLqZ8=
+    secure: AAABAGKgYCu5U6+rIo0M4ndAtVzcF/2TOaqeYYt5cZ/zxpRBNON59oQ4xTDshg8+Gw==
   pulumi-quickstart:key_pair:
     secure: AAABABYc05fdXzwP6MyKVM8fR+SMDxXQedllAl+Gmnls81QbYM6SLkQ=
