@@ -10,7 +10,7 @@ key_pair = config.require_secret('key_pair')
 # create resources
 group = aws.ec2.SecurityGroup(
   'webserver-sg',
-  description='enable ssh access',
+  description='enable http & ssh access',
   ingress=[
     {'protocol': 'tcp', 'from_port': 22, 'to_port': 22, 'cidr_blocks': [ip_address]},
     {'protocol': 'tcp', 'from_port': 80, 'to_port': 80, 'cidr_blocks': ['0.0.0.0/0']}
@@ -20,7 +20,7 @@ group = aws.ec2.SecurityGroup(
 ami = aws.ec2.get_ami(
   most_recent=True,
   owners=['137112412989'],
-  filters=[{'name': 'name', 'values': ['amzn-ami-hvm-*']}]
+  filters=[{'name': 'name', 'values': ['amzn2-ami-kernel-5.10-hvm-*']}]
 )
 
 user_data = """
