@@ -33,7 +33,7 @@ server = aws.ec2.Instance(
   'webserver',
   instance_type='t2.micro',
   vpc_security_group_ids=[group.id],
-  user_data=user_data,
+  # user_data=user_data,
   ami=ami.id,
   key_name=key_pair,
   tags={
